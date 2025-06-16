@@ -1,0 +1,51 @@
+
+<html>
+  <head>
+  <style>
+		/*Internal CSS */
+		body{
+			background-color:rgb(255,218,185)
+		}
+	</style>
+   <title>Analysis</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script src="script.js"></script>
+    <script src="helper.js"></script>
+	
+    <link href="c3-eb4b9be8.css" rel="stylesheet" type="text/css" />
+    <script src="d3-5.8.2.min-c5268e33.js"></script>
+    <script src="c3.min-d2a1f852.js"></script>
+  </head>
+  <body onload="chartInit()"> 
+    <header>
+	<h1> Analysis </h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="script.js">Info</a>
+			<a href="html.html">Analysis</a>
+		</nav>
+	</header>
+	
+<div class="container">
+	<div id="pp">
+	<h3>Select Chart Type</h3>
+	<select id="chartType" style="width:100px;">
+		<option value="Pie">Pie<option>
+	</select>
+	</div>
+</div>
+
+	<div>
+	<input type="button" onclick="hospitalizedByBorough()" value="Display"></input>
+	</div>
+		<h3> Hospitalized By Borough </h3>
+		<p> This is the amount of people who were hospitalized by Borough </p>
+	<div id="chart"></div>
+	</div>
+
+
+	
+ </script>
+</body>
+</html>
